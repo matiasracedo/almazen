@@ -1,0 +1,81 @@
+.user {
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+  height: 92vh;
+  width: 100%;
+  color: #fff;
+  background-color: var(--color-primary);
+  &__form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 1rem;
+    margin-top: 10rem;
+    background-color: #fff;
+    width: 50rem;
+    height: 60rem;
+    box-shadow: 1rem 1rem 1rem rgba(0, 0, 0, 0.5);
+    .titulo-shadow {
+      color: var(--color-primary);
+      font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+      font-size: 4rem;
+    }
+    button {
+      border: none;
+
+      padding: 1rem 4rem;
+      background-color: var(--red-button);
+      color: #fff;
+      transition: 0.5s ease;
+      &:hover {
+        // border: 0.1rem solid green;
+        // padding: 0.9rem 3.9rem;
+        cursor: pointer;
+        background-color: rgb(194, 45, 45);
+      }
+    }
+
+    div {
+      gap: 2rem;
+      margin: 1rem 0rem;
+      position: relative;
+     
+     
+    }
+  }
+}
+
+.inputs {
+  border: none;
+  border-bottom: 1px solid #000;
+  text-align: center;
+  padding: 0.6rem 0;
+  width: 26rem;
+}
+.inputsPassword{
+  border-color:red;
+}
+.password{
+  display: flex;
+  flex-direction: column;
+  width: 26rem;
+  span{
+    font-size: 1.5rem;
+    color:var(--red-button) !important;
+    text-align: center;
+  }
+}
+
+.label {
+  position: absolute;
+  left: 0;
+  top: 0.5rem;
+  svg {
+    width: 2rem;
+    height: 2rem;
+  }
+}
+ 

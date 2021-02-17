@@ -1,0 +1,79 @@
+.header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 0.7rem;
+  // background-color: #599e2a;
+  background-color: var(--color-primary);
+  flex-wrap: wrap;
+  @media only screen and(max-width: 50em) {
+    justify-content: center;
+    padding: 2rem;
+  }
+
+  @media only screen and(max-width: 31.5em) {
+    justify-content: center;
+    padding: 3rem;
+  }
+  
+  @media only screen and(max-width: 24em) {
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+  }
+  &__nav {
+    @media only screen and(max-width: 25em) {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    @media only screen and(max-width: 22.6em) {
+      flex-wrap: wrap;
+    }
+  }
+
+  .nav-title {
+    text-shadow: 1px 1px 0.5rem rgba(0, 0, 0, 0.4),
+      -1px -1px 0.5rem rgba(0, 0, 0, 0.4);
+    transition: 0.4s ease;
+    font-size: 3.5rem;
+    &:hover {
+      transform: scale(1.1);
+    }
+  }
+  a {
+    color:#fff;
+    text-decoration: none;
+    font-size: 2rem;
+    margin: 0 1.4rem;
+  }
+  &__ingresar {
+    border: 1px solid var(--color-last);
+    padding: 1rem 2rem;
+    color: var(--color-last) !important;
+  }
+  &__registrar {
+    background-color: var(--red-button);
+    padding: 1rem 2rem;
+  }
+  .search {
+    @media only screen and(max-width: 31.5em) {
+      margin: 1rem auto;
+    }
+  }
+}
+.number-carrito {
+  display: inline;
+  font-size: 1rem;
+  background: black;
+  padding: 0 5px;
+  border-radius: 10px;
+  color: white;
+  vertical-align: top;
+  position: relative;
+  margin-left: -15px;
+}
+.developerButton:hover {
+  color: #f88f01;
+  text-shadow: 2px 5px 11px rgba(0,0,0,1);
+}

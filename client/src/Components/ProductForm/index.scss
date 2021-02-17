@@ -1,0 +1,146 @@
+.productForm {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  .head_form {
+    display: flex;
+    flex-direction: row;
+    gap: 25%;
+    align-items: center;
+  }
+  h3 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    text-align: center;
+  }
+
+  form {
+    background-color: #fbfcfd;
+    border: none;
+    box-shadow: 0.4rem 0.4rem rgba(0, 0, 0, 0.5);
+    padding: 4rem;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    cursor: pointer;
+    div {
+      display: flex;
+      margin: 1rem 0;
+    }
+    .div-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+    }
+    input[type="number"]::-webkit-inner-spin-button {
+      appearance: none;
+    }
+    input {
+      border: none;
+      border-bottom: 1px solid var(--color-secondary);
+      text-align: center;
+    }
+    label {
+      line-height: 4rem;
+      flex: 20rem 0;
+      text-align: center;
+      text-transform: uppercase;
+      margin-right: 3rem;
+      font-size: 1.7rem;
+    }
+    select {
+      flex: 30rem 0;
+      margin-right: 3rem;
+      border: 1px solid var(--color-secondary);
+    }
+    input,
+    button {
+      flex: 1;
+      height: 4rem;
+      width: 100%;
+    }
+    button {
+      padding: 1rem 0;
+      background-color: var(--color-secondary);
+      font-size: 1.6rem;
+      border: none;
+      color: #fff;
+      transition: 0.4s ease;
+      &:hover {
+        box-shadow: 0.2rem 0.2rem 0.7rem rgba(0, 0, 0, 0.5);
+        transform: scale(1, 1.1);
+      }
+    }
+    textarea {
+      height: 10rem;
+      width: 100%;
+      border: 1px solid var(--color-secondary);
+      text-align: center;
+    }
+    .buttons {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 3rem;
+      a {
+        text-decoration: none;
+        text-align: center;
+        padding: 1rem 0;
+        background-color: var(--red-button);
+        font-size: 1.4rem;
+        border: none;
+        color: #fff;
+        transition: 0.4s ease;
+        &:hover {
+          box-shadow: 0.2rem 0.2rem 0.4rem rgba(0, 0, 0, 0.5);
+          transform: scale(1, 1.1);
+        }
+      }
+    }
+  }
+  .cat {
+    background-color: #fff;
+    border: 1px solid #aedaa6;
+    color: #000;
+    font-weight: 500;
+    font-size: 1.5rem;
+    height: auto;
+    span {
+      cursor: pointer;
+      font-size: 1.5rem;
+    }
+  }
+  .categories {
+    display: flex;
+    flex-direction: column;
+    p {
+      text-align: center;
+    }
+    div {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      button {
+        margin: 1rem;
+        position: relative;
+        span {
+          position: absolute;
+          right: 0.4rem;
+          color: red;
+        }
+      }
+    }
+  }
+}
+
+.EditButtons {
+  .rs-btn {
+    background-color: var(--red-button);
+    padding: 1rem 4rem;
+    color: #fff;
+    font-size: 1.6rem;
+    float: right;
+    margin-bottom: 1rem;
+    &:hover {
+      color: #000;
+    }
+  }
+}

@@ -1,0 +1,24 @@
+
+	.photo__selector{
+				display: flex;
+				flex-direction: column;
+
+	}
+
+	.img__container__div {
+		display:flex;
+		flex-direction: row;
+		gap: 1rem;
+	
+	}
+input[type="file"] {
+		display: none;
+}
+.label-image {
+	background-color:var(--color-secondary);
+		border: 1px solid #ccc;
+		display: block;
+		color:#fff;
+		text-transform:capitalize !important;
+		cursor: pointer;
+}

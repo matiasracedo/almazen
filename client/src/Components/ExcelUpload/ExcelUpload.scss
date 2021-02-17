@@ -1,0 +1,24 @@
+input[type="file"] {
+  display: none;
+}
+.label-excel {
+  background-color: rgb(32, 102, 61);
+  border: 1px solid #ccc;
+  display: block;
+  color: #fff;
+  font-size: 2rem;
+  text-align: center;
+  width: 25rem;
+  margin: 0 auto;
+  padding: 0.5rem;
+  margin-top: 1rem;
+  border-radius: 1rem;
+  cursor: pointer;
+}
+.excel {
+  .rs-modal-dialog {
+    width: 150rem;
+    transform: translateX(-40rem);
+    height: 40rem;
+  }
+}

@@ -1,0 +1,71 @@
+.reviewCard {
+  display: flex;
+  max-width: 90rem;
+  width: 100%;
+  background-color: white;
+  height: auto;
+  margin: 1rem 0;
+  flex-direction: row;
+  justify-content: space-around;
+  position: relative;
+  @media only screen and(max-width:44em) {
+    max-width: 110rem;
+  }
+  h4 {
+    text-transform: capitalize;
+  }
+  &__buttons {
+    display: flex;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+  }
+}
+.fecha {
+  font-size: 1.5rem;
+  float: right;
+  margin-right: 2rem;
+  margin-top: 3rem;
+}
+.review-description {
+  height: 1rem;
+  max-height: 11rem;
+  max-width: 35rem;
+}
+.btnEliminar {
+  border: none;
+  background-color: white;
+  color: var(--red-button);
+  font-size: 1.5rem;
+  padding: 1.2rem 0;
+  text-align: center;
+  transition: 0.5s ease-out;
+  &:hover {
+    transform: scale(1, 1.1);
+    cursor: pointer;
+  }
+}
+.btnEditar {
+  margin-right: 2rem;
+  border: none;
+  background-color: white;
+  color: var(--color-primary);
+  font-size: 1.5rem;
+  padding: 1.2rem 0;
+  text-align: center;
+  transition: 0.5s ease-out;
+  &:hover {
+    transform: scale(1, 1.1);
+    cursor: pointer;
+  }
+}
+.rs-panel-group {
+  display: flex;
+  margin: 0 auto;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.rs-panel-body {
+  width: 100%;
+  padding: 1rem 4rem;
+}

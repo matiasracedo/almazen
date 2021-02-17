@@ -1,0 +1,37 @@
+
+.rs-modal-dialog {
+  @media only screen and (max-width: 45em)and(min-width:30em) {
+    width: 70%;
+    margin-left: 4rem;
+    max-width: 100%;
+  }
+  @media only screen and (max-width: 30em) {
+    width: 57%; 
+    margin-left: 3rem;
+    max-width: 100%;
+  }
+  
+}
+.reviewForm {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+
+	div {
+		display: flex;
+		padding: 1rem;
+		flex-direction: column;
+		text-align: center;
+		margin: 1rem 0;
+		textarea {
+			resize: none;
+			width: 50rem;
+			height: 8rem;
+			border: none;
+			&:focus {
+				border: 1px solid #ccc;
+			}
+		}
+	}
+}

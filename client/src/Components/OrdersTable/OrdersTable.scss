@@ -1,0 +1,46 @@
+.listContainer {
+	display: flex;
+	align-items: center;
+	width: 100%;
+	flex-direction: column;
+	overflow: auto;
+}
+.filtro {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	label {
+		font-size: small;
+		margin-top: 4rem;
+	}
+	select {
+		font-size: small;
+		color: var(--color-tertiary);
+		&:hover {
+			color: #000;
+		}
+	}
+}
+
+.tabla {
+	border: 1px solid black;
+	text-align: center;
+	margin-top: 1rem;
+	width: 100%;
+	height: auto;
+	td {
+		border: 1px solid black;
+		padding: 0.5rem 0;
+		font-weight: bold;
+		background-color: #f5f4f4;
+		height: auto;
+		svg {
+			cursor: pointer;
+		}
+	}
+	th {
+		background-color: var(--color-secondary);
+		color: #fff;
+		padding: 1rem 0;
+	}
+}

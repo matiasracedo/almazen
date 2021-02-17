@@ -1,0 +1,49 @@
+.table_container1 {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  flex-direction: column;
+  overflow: auto;
+  min-height: 80vh;
+  align-self: center;
+  background: none !important;
+}
+.detalles1 {
+  text-align: center;
+  margin-top: 1rem;
+  width: 75%;
+  height: auto;
+  @media only screen and(max-width:50em) {
+    width: 95%;
+  }
+  td {
+    border: 1px solid black;
+    /* padding: 0.5rem 0; */
+    font-weight: bold;
+    background-color: white;
+    position: relative;
+  }
+  button {
+    background-color: var(--color-secondary);
+    border: none;
+    color: white;
+    padding: 1rem 2rem;
+    cursor: pointer;
+    transition: 0.5s ease;
+    margin-top: 1rem;
+    @media only screen and (max-width: 40em) {
+      padding: 0.8rem;
+      font-size: 1.4rem;
+    }
+    &:hover {
+      transform: scale(1.1);
+    }
+  }
+}
+
+th {
+  background-color: var(--color-secondary);
+  color: #fff;
+  padding: 1rem 0;
+  height: 2rem;
+}

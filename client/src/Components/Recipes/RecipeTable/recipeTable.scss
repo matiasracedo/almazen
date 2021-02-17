@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Teko&display=swap');
+
+.recipeTable {
+    width: 80%;
+    margin: 0 auto;
+    &__body {
+        display: flex;
+        flex-wrap: wrap-reverse;
+        width: 100%;
+        justify-content: space-between;
+        align-items: center;
+        img {
+            max-width: 100%;
+        }
+    }
+    &__title {
+        text-align: center;
+        color: #cae4db;
+    }
+    &__container {
+        margin: 0 auto;
+    }
+    &__ingredients {
+        width: 60%;
+    }
+    &__card {
+        background-color: white;
+        margin: 2rem 0;
+        padding: 2rem;
+        box-shadow: 0 0 1rem rgba(#000, 0.6);
+        position: relative;
+        h2 {
+            color: var(--color-secondary);
+            font-family: 'Teko', sans-serif;
+        }
+        ul {
+            margin-left: 2rem;
+            margin-bottom: 5rem;
+            li {
+                font-size: 1.9rem;
+            }
+        }
+        a {
+            color: white;
+            font-size: 2rem;
+            font-weight: bold;
+            background-color: var(--color-primary);
+            padding: 1rem 3rem;
+            position: absolute;
+            bottom: 0rem;
+            left: 0rem;
+        }
+    }
+}

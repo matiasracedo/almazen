@@ -1,0 +1,141 @@
+.catForm-ctn {
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	h3 {
+		text-align: center;
+		font-size: 2.5rem;
+		margin: 3rem 0;
+	}
+}
+.categoryForm {
+	background-color: var(--color-bg-form);
+	padding: 2rem;
+	border: 1px solid #ccc;
+	box-shadow: 0.4rem 0.4rem rgba(0, 0, 0, 0.5);
+	display: flex;
+	flex-direction: column;
+	margin-bottom: 2rem;
+	div {
+		display: flex;
+		margin: 3rem 0;
+	}
+	label {
+		flex: 20rem 0;
+	}
+	input {
+		border: none;
+		flex: 1;
+		border-bottom: 1px solid var(--color-secondary);
+		text-align: center;
+		&::placeholder {
+			text-align: center;
+		}
+	}
+	textarea {
+		flex: 1;
+		height: 10rem;
+		width: 100%;
+		border: 1px solid var(--color-secondary);
+		text-align: center;
+		margin-bottom: 2rem;
+		&::placeholder {
+			text-align: center;
+		}
+	}
+	.button--category {
+		display: block;
+		margin: 0 auto;
+
+		background-color: var(--color-secondary);
+		border: none;
+		color: white;
+		padding: 1rem 6rem;
+		cursor: pointer;
+		transition: 0.5s ease;
+		&:hover {
+			transform: scale(1.1);
+		}
+	}
+	.buttons {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		gap: 3rem;
+		button {
+			font-size: large;
+			background-color: var(--color-secondary);
+			border: none;
+			color: white;
+			padding: 1rem 4rem;
+			cursor: pointer;
+			transition: 0.5s ease;
+			&:hover {
+				transform: scale(1.1);
+			}
+		}
+		a {
+			font-size: large;
+			text-decoration: none;
+			text-align: center;
+			padding: 1rem 0;
+			background-color: var(--red-button);
+			border: none;
+			color: #fff;
+			transition: 0.4s ease;
+			&:hover {
+				box-shadow: 0.2rem 0.2rem 0.4rem rgba(0, 0, 0, 0.5);
+				transform: scale(1, 1.1);
+			}
+		}
+	}
+}
+.tabla {
+	border: 1px solid black;
+	text-align: center;
+	margin-top: 1rem;
+	width: 100%;
+	&__nameCategory {
+		// display: flex;
+		// justify-content: space-around;
+		margin-right: auto;
+		span {
+			display: inline-block;
+		}
+	}
+	td {
+		border: 1px solid black;
+		padding: 0.5rem 0;
+		height: 100%;
+		background-color: #f5f4f4;
+
+		button {
+			font-size: 2rem;
+			color: red;
+			background: none;
+			padding: 0.4rem 2rem;
+			border: none;
+			transition: 0.4s ease;
+			&:hover {
+				transform: scale(1.1);
+				cursor: pointer;
+			}
+		}
+		a {
+			text-decoration: none;
+			color: green;
+			transition: 0.4s ease;
+			svg:hover {
+				transform: scale(1.1);
+				cursor: pointer;
+			}
+		}
+	}
+}
+.categoria {
+	width: 30rem;
+}
+// table,
+// th,
+// tr {
+// 	border: 1px solid #eebb4d;
+// }

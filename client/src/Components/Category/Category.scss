@@ -1,0 +1,32 @@
+.category {
+	background-color: rgba(#d6efc7, 1);
+	color: #000;
+	border-radius: 1rem;
+	text-align: center;
+	width: 100%;
+	max-width: 100rem;
+	div {
+		font-size: 1.8rem;
+		letter-spacing: 1px;
+		display: flex;
+		font-weight: bold;
+		flex: 30rem 0;
+	}
+	span {
+		font-size: 1.8rem;
+		text-transform: capitalize;
+	}
+
+	.ListItem.Mui-selected {
+		background-color: var(--color-secondary);
+		color: #fff;
+	}
+
+	.MuiListItem-root.Mui-selected:hover {
+		background-color: var(--color-secondary);
+	}
+}
+.absolute {
+	position: sticky;
+	top: 2%;
+}

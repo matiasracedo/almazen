@@ -1,0 +1,50 @@
+.table_container {
+	display: flex;
+	align-items: center;
+	width: 100%;
+	flex-direction: column;
+	overflow: auto;
+	min-height: 80vh;
+	align-self: center;
+	background: none !important;
+}
+.detalles {
+	text-align: center;
+	margin-top: 1rem;
+	width: 75%;
+	height: auto;
+	.tableCard {
+		height: 10rem;
+		&__imagen {
+			height: 100px;
+			width: 100px;
+			max-width: 100%;
+			height: 100%;
+		}
+	}
+	td {
+		border: 1px solid black;
+		/* padding: 0.5rem 0; */
+		font-weight: bold;
+		background-color: white;
+	}
+	button {
+		background-color: var(--color-secondary);
+		border: none;
+		color: white;
+		padding: 1rem 4rem;
+		cursor: pointer;
+		transition: 0.5s ease;
+		margin-top: 1rem;
+		&:hover {
+			transform: scale(1.1);
+		}
+	}
+}
+
+th {
+	background-color: var(--color-secondary);
+	color: #fff;
+	padding: 1rem 0;
+	height: 2rem;
+}

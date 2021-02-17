@@ -1,0 +1,46 @@
+.contenedor-all{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.product_Img_Slide{
+
+    display:none;
+    width: 30rem;
+    height: 30rem;
+}
+
+#img0{
+    display:block;
+}
+
+
+.btn-container{
+    position: absolute;
+padding: 0;
+display:flex;
+gap:22rem;   
+justify-items: center;
+            .slide-button{ 
+                padding: 0; 
+                border: none;
+                background: none;
+                color: rgb(1, 255, 136);
+                border-radius: 5rem;
+                font-size: 3rem;
+            }
+
+}
+
+
+
+.slide-button:focus {
+        outline: 0;
+        }
+
+.slide-button:hover {
+    background-color: rgba(128, 128, 128, 0.295);
+}

@@ -1,0 +1,87 @@
+.product {
+  position: relative;
+  &__title {
+    font-size: 3rem;
+    text-align: center;
+    margin: 2rem auto;
+    text-transform: uppercase;
+    color: var(--red-button);
+    width: 50rem;
+    text-shadow: 0.3rem 0.3rem 0.3rem rgba(0, 0, 0, 0.4);
+    position: relative;
+    &::before {
+      content: "";
+      display: block;
+      width: 3rem;
+      height: 3rem;
+      position: absolute;
+      left: 0;
+      top: 2.7rem;
+      background-color: var(--red-button);
+      border-radius: 100%;
+      @media only screen and (max-width: 40em) {
+        top: 4rem;
+      }
+    }
+  }
+  &__subtitle {
+    font-size: 4rem;
+    text-shadow: 0.2rem 0.6rem 0.4rem rgba(#000, 0.4);
+    height: 7rem;
+    box-shadow: 0.2rem 0.2rem 0.2rem rgba(#000, 0.2),
+      -0.2rem -0.2rem 0.2rem rgba(#000, 0.2);
+    overflow: hidden;
+    color: #fff;
+    background-color: var(--color-last);
+    display: block;
+    padding: 0 0.8rem;
+    font-weight: bold;
+
+    margin: 2rem auto;
+
+    p {
+      animation: llevate 10s infinite linear;
+      text-transform: uppercase;
+    }
+  }
+  &__container {
+    width: 93%;
+    height: auto;
+    margin: 4rem auto;
+    display: flex;
+    gap: 1rem;
+    overflow: hidden;
+  }
+}
+@keyframes llevate {
+  0% {
+    transform: translateX(-30%);
+  }
+
+  100% {
+    transform: translateX(100%);
+  }
+}
+
+.rs-carousel {
+  background: none;
+  height: auto;
+  margin: 0 auto;
+  padding-bottom: 10rem;
+  &-label {
+    background-color: var(--color-primary);
+  }
+  &-content {
+    background: none;
+  }
+  &-slider {
+    background: none !important;
+    display: flex !important;
+    &-after {
+      @extend .rs-carousel-slider;
+    }
+  }
+}
+.custom-slider {
+  width: 50%;
+}

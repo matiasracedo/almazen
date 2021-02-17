@@ -1,0 +1,121 @@
+@import url(https://fonts.googleapis.com/css?family=Raleway:400,300,500,700);
+
+.productCard {
+	position:relative;
+	margin: 0 auto;
+	width: 120rem;
+	background-color: #ffff;
+	transform: translateY(8rem);
+	box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+	transition: all 0.3s;
+	display: grid;
+	grid-template-columns: 40% 60%;
+	align-items: center;
+	height: auto;
+
+	@media only screen and(max-width: 50em) {
+		grid-template-columns: 100%;
+		grid-row-gap: 3rem;
+		width: 90%;
+		justify-content: center;
+		transform: translateY(0);
+    margin-bottom: 3rem;
+	}
+
+	&:hover {
+		box-shadow: 3px 8px 17px 0 rgba(0, 0, 0, 0.2),
+			0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	}
+	.productPhoto {
+		text-align: center;
+		padding: 1rem;
+		.product_Img_Slide {
+			max-height: 100%;
+			max-width: 100%;
+		}
+	}
+	.productDescription {
+		padding: 15px;
+		border-left: 2px solid #efefef;
+		h1 {
+			color: #515151;
+			font-weight: 300;
+			margin: 0;
+			font-size: 30px;
+			font-weight: 300;
+		}
+		h2 {
+			color: #515151;
+			margin: 0;
+			text-transform: uppercase;
+			font-weight: 500;
+		}
+		h4 {
+			margin: 0;
+			color: #727272;
+			text-transform: uppercase;
+			font-weight: 500;
+			font-size: 2rem;
+		}
+		p {
+			font-size: 1.6rem;
+			line-height: 24px;
+			color: #727272;
+			padding: 20px 0;
+		}
+		button {
+			outline: 0;
+			border: 0;
+			background: none;
+			border: 1px solid #d9d9d9;
+			padding: 8px 0px;
+			color: #515151;
+			text-transform: uppercase;
+			width: 100%;
+			font-family: inherit;
+			margin-right: 5px;
+			transition: all 0.3s ease;
+			font-weight: 500;
+			&:hover {
+				border: 1px solid #aedaa6;
+				color: #aedaa6;
+				cursor: pointer;
+			}
+		}
+		.btn__exit{
+			position:absolute;
+			top:1rem;
+			right:1rem;
+			color:var(--red-button);
+			font-size: 2rem;
+			border:none;
+			width:4rem;
+			transition: .6s;
+			&:hover {
+				color: #ffff;
+				background-color: var(--red-button);
+				cursor: pointer;
+			}
+		}
+		.no-review {
+			font-weight: bold;
+		}
+		@media only screen and(max-width: 50em) {
+			.buttons {
+				display: grid;
+				grid-template-columns: repeat(2, 1fr);
+			}
+		}
+	}
+}
+.reviews-container {
+	margin: 15rem 10rem;
+	
+}
+
+.custom-slider {
+	background-color: whitesmoke;
+	display: flex;
+	align-content: center;
+	justify-content: center;
+}

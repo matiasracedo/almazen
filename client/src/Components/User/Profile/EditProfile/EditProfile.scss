@@ -1,0 +1,25 @@
+.Pop-up {
+  display: flex;
+  flex-direction: column;
+  input {
+    padding: 1rem;
+    margin: 1rem 0;
+  }
+  textarea {
+    resize: none;
+  }
+}
+.button-guardar {
+  background-color: var(--color-secondary);
+}
+.button-cancelar {
+  background-color: var(--red-button);
+  color: #fff;
+}
+.rs-modal-dialog {
+  @media only screen and (max-width: 45em) {
+    width: 70%;
+    margin-left: 4rem;
+    max-width: 100%;
+  }
+}

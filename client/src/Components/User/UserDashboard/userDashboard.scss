@@ -1,0 +1,43 @@
+.userDashboard {
+	display: grid;
+	grid-template-columns: min-content 1fr;
+	place-content: center;
+	margin: 0 auto;
+	min-height: 70vh;
+	@media only screen {
+		grid-template-columns: 100%;
+		justify-content: center;
+	}
+	&__left {
+		width: 40%;
+		padding: 4rem;
+		margin: 2rem auto;
+		box-shadow: 0 0 1rem rgba(#0000, 0.2);
+		background-color: #fff;
+
+		@media only screen and (max-width: 60em) {
+			width: 90%;
+		}
+	}
+	&__right {
+		margin: 4rem auto;
+		width: 70%;
+		@media only screen {
+			width: 90%;
+		}
+		.tableUser {
+			text-align: center;
+			.rs-table {
+				margin: 0rem auto;
+				box-shadow: 0 0 1rem rgba(#0000, 0.2);
+			}
+			.rs-table-row-header {
+				color: var(--color-primary);
+				font-weight: bold;
+			}
+		}
+		.tableUser__title {
+			color: #000;
+		}
+	}
+}

@@ -1,0 +1,94 @@
+.Pop-up {
+  display: flex;
+  flex-direction: column;
+  input {
+    padding: 1rem;
+    margin: 1rem 0;
+  }
+}
+.button-guardar {
+  background-color: var(--color-secondary);
+  color: #fff;
+}
+
+.rs-modal-dialog {
+  @media only screen and (max-width: 45em) {
+    width: 70%;
+    margin-left: 4rem;
+    max-width: 100%;
+  }
+}
+
+.confirmCompra {
+  .rs-form {
+    width: 50%;
+    padding: 5rem;
+    margin: 6rem 6rem;
+    background-color: #fff;
+    box-shadow: 0 0 1rem rgba(#0000, 0.7);
+    border-radius: 1rem;
+    position: relative;
+    @media only screen and(max-width:55em) {
+      margin: 6rem auto;
+      width: 80%;
+    }
+    input {
+      width: 100%;
+    }
+    p {
+      text-align: center;
+      color: var(--color-primary);
+      font-size: 2.4rem;
+      font-weight: bold;
+    }
+  }
+  .img {
+    z-index: 1;
+    position: relative;
+    position: absolute;
+    max-width: 100%;
+    right: 0rem;
+    bottom: 0rem;
+    @media only screen and(max-width:55em) {
+      display: none;
+      right: -15rem;
+    }
+    @media only screen and(max-width:32em) {
+      right: -33rem;
+    }
+    span {
+      font-weight: bold;
+      color: antiquewhite;
+      position: absolute;
+      right: 16.5rem;
+      top: 2rem;
+      z-index: 1;
+      transform: skewY(-4deg);
+      @media only screen and(max-width:87.2em) {
+        right: 23rem;
+        top: 3rem;
+        font-size: 2.1rem;
+      }
+      @media only screen and(max-width:50em) {
+        right: 27rem;
+        top: 4rem;
+      }
+      @media only screen and(max-width:30em) {
+        right: 34rem;
+        font-size: 2.4rem;
+        top: 4rem;
+      }
+    }
+  }
+
+  h1 {
+    font-size: 3vw;
+    line-height: 8rem;
+    letter-spacing: 0.5rem;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: inherit;
+    color: var(--color-tertiary);
+    transform: translateY(4rem);
+  }
+}

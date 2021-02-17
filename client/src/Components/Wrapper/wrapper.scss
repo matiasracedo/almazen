@@ -1,0 +1,24 @@
+.wrapper {
+  background-image: url("../../assets/pexels-snapwire-349730.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: 0 -5rem;
+  height: 40vh;
+
+  &__subtitulo {
+    text-align: center;
+    font-size: 2.5vw;
+    transform: translateY(5rem);
+    text-transform: uppercase;
+    text-shadow: 1px 2px 0.4rem #272a3d, 2px 1px 0.6rem #272a3d;
+    color: #ffa7a3;
+
+    @media only screen and (max-width: 37em) {
+      height: 100%;
+      margin: 1.4rem;
+      margin-top: -1rem;
+      align-self: flex-end;
+      font-size: 2.5vh;
+    }
+  }
+}

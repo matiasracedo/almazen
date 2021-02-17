@@ -1,0 +1,104 @@
+.dashboard {
+  margin: 0rem auto;
+
+  border-radius: 2rem;
+
+  // box-shadow: 1rem -0.5rem 1rem rgba(0, 0, 0, 0.3),
+  // 	1rem 0.5rem 1rem rgba(0, 0, 0, 0.3);
+
+  // @media screen and(max-width: 50em) {
+  // 	grid-template-columns: 100%;
+  // 	grid-template-rows: 30% 70%;
+  // }
+
+  &__title {
+    text-align: center;
+    font-size: 2.5rem;
+    margin: 3rem 0;
+  }
+  &__img {
+    @media screen and (max-width: 50em) {
+      width: 7rem;
+    }
+    &-list {
+      width: 40%;
+      @media screen and (max-width: 50em) {
+        width: 7rem;
+      }
+    }
+    width: 30%;
+    transition: 0.3s ease-in;
+    cursor: pointer;
+    @media screen and(max-width: 50em) {
+      height: 9rem;
+    }
+    &:hover {
+      transform: scale(1.2);
+    }
+  }
+  &__left {
+    position: sticky;
+    top: 23rem;
+    left: 0;
+    flex: 20rem 0;
+    width: 8%;
+    background-color: var(--color-tertiary);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    border-top-right-radius: 2rem;
+    border-bottom-right-radius: 2rem;
+    @media screen and(max-width: 50em) {
+      width: 99%;
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      height: 100%;
+      top: 0;
+      right: 0;
+      left: 0.5rem;
+    }
+    .active {
+      background-color: var(--color-secondary);
+      color: #fff;
+      width: 100%;
+      @media screen and(max-width: 50em) {
+        width: 100%;
+        height: 100%;
+      }
+    }
+    .active1 {
+      border-top-right-radius: 2rem;
+    }
+    .active2 {
+      border-bottom-right-radius: 2rem;
+    }
+  }
+
+  &__right {
+    display: flex;
+    justify-content: flex-start;
+    padding: 4rem;
+    width: 60%;
+    margin: -38rem 0 0 40rem;
+    @media screen and(max-width: 87.5em) {
+      margin: -45rem 0 0 30rem;
+      width: 70%;
+      padding: 2rem;
+    }
+    @media screen and(max-width: 50em) {
+      justify-content: center;
+      padding: 0 2rem;
+      margin: 2rem auto;
+      width: 99%;
+    }
+  }
+  &__edit {
+    width: 60%;
+    margin: 0 auto;
+  }
+  a {
+    text-decoration: none;
+    color: black;
+  }
+}

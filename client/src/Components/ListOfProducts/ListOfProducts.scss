@@ -1,0 +1,57 @@
+.listContainer {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  flex-direction: column;
+  overflow: auto;
+}
+.tabla {
+  border: 1px solid black;
+  text-align: center;
+  margin-top: 1rem;
+  width: 100%;
+  height: 50rem;
+  &__name {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    span {
+      margin-left: 2rem;
+    }
+  }
+  td {
+    height: 100%;
+    border: 1px solid black;
+    padding: 0.5rem 0;
+    font-weight: bold;
+    background-color: #f6eec9;
+    button {
+      font-size: 2rem;
+      color: red;
+      background: none;
+      padding: 0.4rem 2rem;
+      border: none;
+      transition: 0.4s ease;
+      &:hover {
+        transform: scale(1.1);
+        cursor: pointer;
+      }
+    }
+    a {
+      text-decoration: none;
+      color: green;
+      transition: 0.4s ease;
+      svg:hover {
+        transform: scale(1.1);
+        cursor: pointer;
+      }
+    }
+  }
+
+  th {
+    background-color: #96bb7c;
+    color: #fff;
+    padding: 1rem 0;
+    flex: 1;
+  }
+}

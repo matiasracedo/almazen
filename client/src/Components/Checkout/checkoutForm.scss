@@ -1,0 +1,97 @@
+.checkoutForm-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: 3rem;
+  width: 60%;
+  background-color: #ffff;
+  box-shadow: 0.4rem 0.4rem 1rem rgba(#000, 0.3);
+  margin: 0 auto;
+  text-align: center;
+  @media only screen and(max-width:40em) {
+    width: 95%;
+  }
+}
+.checkoutForm-content {
+  flex: 40rem 0;
+}
+.sidebar-form {
+  width: 100%;
+  padding: 4rem;
+}
+.checkoutForm__right {
+  text-align: center;
+}
+.form-headers {
+  text-align: center;
+  width: 100%;
+  color: black;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-size: 2rem;
+}
+.checkout-btns {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.checkout-total {
+  text-align: center;
+  display: block;
+  font-size: 3rem;
+  font-family: bold;
+  border-top: 1px solid #000;
+}
+#tablaDetalles {
+  min-height: 42rem;
+}
+.rs-table-cell-header {
+  .rs-table-cell {
+    background-color: var(--color-primary);
+    color: #fff;
+    &:hover {
+      color: #000;
+    }
+  }
+}
+// .rs-table-cell,
+.rs-table-row {
+  border: 0.2px solid #000;
+}
+
+.Pop-up1 {
+
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  .rs-form-control-wrapper{
+
+    input {
+      width: 100%;
+    }
+  }
+
+}
+.button-guardar1 {
+  background-color: var(--color-secondary);
+  color: #fff;
+}
+.button-cancelar1 {
+  background-color: var(--red-button);
+  color: #fff;
+}
+.rs-modal-dialog {
+  @media only screen and (max-width: 45em)and(min-width:30em) {
+    width: 70%;
+    margin-left: 4rem;
+    max-width: 100%;
+  }
+  @media only screen and (max-width: 30em) {
+    width: 57%; 
+    margin-left: 3rem;
+    max-width: 100%;
+  }
+  
+}
+.checkoutForm{
+  height: 100%;
+}

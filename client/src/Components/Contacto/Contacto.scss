@@ -1,0 +1,33 @@
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  padding: 4rem;
+  max-width: 90rem;
+  margin: 0 auto;
+  label {
+    font-size: 2rem;
+    margin-top: 3rem;
+    color:#fff;
+  }
+  textarea{
+    height: 18rem;
+    resize: none;
+  }
+  input {
+    padding: 1rem 0rem;
+    &[type="submit"] {
+      margin-top: 3rem;
+      background-color: var(--red-button);
+      color: #fff;
+      font-size: 1.8rem;
+      font-weight: bold;
+      padding: 1rem 0;
+      border: none;
+      transition: 0.8s ease-in-out;
+      &:hover {
+        cursor: pointer;
+        transform: scale(1.1);
+      }
+    }
+  }
+}
